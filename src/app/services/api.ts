@@ -7,7 +7,7 @@ import { ApiResponse, Character } from '../models/character';
   providedIn: 'root'
 })
 export class Api {
-  private readonly API_URL = ''; 
+  private readonly API_URL = 'https://rickandmortyapi.com/api/character'; 
 
   private charactersSignal: any; // Define esto como una señal<Character[]>
 
