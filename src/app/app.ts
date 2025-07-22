@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// Import the CharacterListComponent from its correct path
+import { CharacterListComponent } from './components/character-list/character-list';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -8,8 +10,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CharacterListComponent, CommonModule, RouterOutlet],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
